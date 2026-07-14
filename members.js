@@ -47,18 +47,18 @@ const members = [
     {
         id: 3,
 
-        name: "Member Three",
+        name: "Myat Bhone Kyaw",
 
-        role: "UI / UX Designer",
+        role: "Full Stack Developer",
 
         image:
         "assets/images/member3.jpg",
 
         github:
-        "https://github.com/",
+        "https://sirnekoooqt21.github.io/my-portfolio/",
 
         description:
-        "UI/UX designer creating attractive designs and improving digital user experiences."
+        "A versatile software engineer who builds and maintains both the front-end (user-facing interface) and the back-end (behind-the-scenes server, database, and logic) of a website or web application."
     },
 
 
