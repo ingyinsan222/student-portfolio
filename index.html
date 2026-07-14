@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description" content="Team Nova - Creative and professional university portfolio showcase">
+
     <title>Team Nova | Portfolio</title>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
+
+    <!-- CSS (same folder) -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+
 
 <!-- PAGE LOADER -->
 <div class="loader" id="loader">
@@ -22,132 +30,352 @@
     <h2>Team Nova</h2>
 </div>
 
+
+
 <!-- SCROLL PROGRESS -->
 <div class="progress-bar" id="progressBar"></div>
 
+
+
+
 <!-- NAVBAR -->
 <header class="header">
-    <nav class="navbar container">
-        <a href="#home" class="logo">Team <span>Nova</span></a>
 
-        <div class="menu-icon" id="menuIcon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+<nav class="navbar container">
 
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
+<a href="#home" class="logo">
+Team <span>Nova</span>
+</a>
 
-        <button class="theme-btn" id="themeToggle" aria-label="Toggle theme">🌙</button>
-    </nav>
-</header>
 
-<!-- HERO SECTION -->
-<section class="hero" id="home">
-    <div class="background-effects">
-        <div class="blob blob-one"></div>
-        <div class="blob blob-two"></div>
-        <div class="blob blob-three"></div>
-    </div>
-
-    <div class="hero-content">
-        <p class="small-title">University Portfolio Project</p>
-        <h1>Team <span>Nova</span></h1>
-        <p class="hero-description">
-            Creative Minds.
-            <br>
-            Professional Solutions.
-        </p>
-        <a href="#team" class="primary-btn">Meet Our Team</a>
-    </div>
-
-    <div class="scroll-indicator">
-        <span></span>
-    </div>
-</section>
-
-<!-- TEAM SECTION -->
-<section class="team-section container" id="team">
-    <div class="section-title">
-        <p>Our Members</p>
-        <h2>Meet The Team</h2>
-    </div>
-
-    <div class="team-grid" id="teamContainer">
-        <!-- Javascript will generate cards here -->
-    </div>
-</section>
-
-<!-- ABOUT PROJECT SECTION -->
-<section class="about-section container" id="about">
-    <div class="section-title">
-        <p>About Project</p>
-        <h2>Our Mission</h2>
-    </div>
-
-    <div class="about-content">
-        <div class="about-card">
-            <h3>Team Nova Portfolio</h3>
-            <p>
-                Team Nova is a university portfolio project created to showcase the creativity,
-                technical skills, and professional abilities of our four team members.
-                This platform provides visitors with an interactive experience where they can
-                explore each member's role, expertise, and personal portfolio.
-            </p>
-        </div>
-
-        <div class="about-card">
-            <h3>Project Goals</h3>
-            <ul>
-                <li>Create a modern team portfolio platform</li>
-                <li>Showcase individual member skills and achievements</li>
-                <li>Provide easy access to personal GitHub portfolios</li>
-                <li>Demonstrate frontend development skills</li>
-            </ul>
-        </div>
-
-        <div class="about-card">
-            <h3>Technologies</h3>
-            <div class="tech-list">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Responsive Design</span>
-                <span>UI/UX Design</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- PROFILE MODAL -->
-<div class="modal" id="profileModal">
-    <div class="modal-box">
-        <button class="modal-close" id="modalClose">×</button>
-        <img src="" alt="Profile image" id="modalImage">
-        <h2 id="modalName"></h2>
-        <h3 id="modalRole"></h3>
-        <p id="modalDescription"></p>
-        <a href="#" target="_blank" id="modalGithub" class="primary-btn">Visit Portfolio</a>
-    </div>
+<div class="menu-icon" id="menuIcon">
+<span></span>
+<span></span>
+<span></span>
 </div>
 
-<!-- BACK TO TOP -->
-<button id="topButton" class="top-button">↑</button>
+
+
+<ul class="nav-links" id="navLinks">
+
+<li>
+<a href="#home">Home</a>
+</li>
+
+<li>
+<a href="#team">Team</a>
+</li>
+
+<li>
+<a href="#about">About</a>
+</li>
+
+</ul>
+
+
+
+<button class="theme-btn" id="themeToggle">
+🌙
+</button>
+
+
+</nav>
+
+</header>
+
+
+
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+
+<div class="background-effects">
+
+<div class="blob blob-one"></div>
+
+<div class="blob blob-two"></div>
+
+<div class="blob blob-three"></div>
+
+</div>
+
+
+
+<div class="hero-content">
+
+
+<p class="small-title">
+University Portfolio Project
+</p>
+
+
+<h1>
+Team <span>Nova</span>
+</h1>
+
+
+<p class="hero-description">
+
+Creative Minds.
+
+<br>
+
+Professional Solutions.
+
+</p>
+
+
+<a href="#team" class="primary-btn">
+Meet Our Team
+</a>
+
+
+</div>
+
+
+
+
+<div class="scroll-indicator">
+
+<span></span>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- TEAM SECTION -->
+
+<section class="team-section container" id="team">
+
+
+<div class="section-title">
+
+<p>
+Our Members
+</p>
+
+<h2>
+Meet The Team
+</h2>
+
+</div>
+
+
+
+<div class="team-grid" id="teamContainer">
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- ABOUT -->
+
+<section class="about-section container" id="about">
+
+
+<div class="section-title">
+
+<p>
+About Project
+</p>
+
+
+<h2>
+Our Mission
+</h2>
+
+
+</div>
+
+
+
+<div class="about-content">
+
+
+<div class="about-card">
+
+<h3>
+Team Nova Portfolio
+</h3>
+
+
+<p>
+Team Nova is a university portfolio project created to showcase the creativity,
+technical skills, and professional abilities of our four team members.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="about-card">
+
+<h3>
+Project Goals
+</h3>
+
+
+<ul>
+
+<li>Create a modern team portfolio platform</li>
+
+<li>Showcase individual member skills</li>
+
+<li>Provide GitHub portfolio access</li>
+
+<li>Demonstrate frontend skills</li>
+
+</ul>
+
+
+</div>
+
+
+
+
+
+<div class="about-card">
+
+
+<h3>
+Technologies
+</h3>
+
+
+<div class="tech-list">
+
+<span>HTML5</span>
+
+<span>CSS3</span>
+
+<span>JavaScript</span>
+
+<span>Responsive Design</span>
+
+<span>UI/UX Design</span>
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<!-- PROFILE MODAL -->
+
+<div class="modal" id="profileModal">
+
+
+<div class="modal-box">
+
+
+<button class="modal-close" id="modalClose">
+×
+</button>
+
+
+<img src="" id="modalImage" alt="Profile">
+
+
+<h2 id="modalName"></h2>
+
+<h3 id="modalRole"></h3>
+
+
+<p id="modalDescription"></p>
+
+
+<a href="#" target="_blank" id="modalGithub" class="primary-btn">
+Visit Portfolio
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- TOP BUTTON -->
+
+<button id="topButton" class="top-button">
+↑
+</button>
+
+
+
+
 
 <!-- FOOTER -->
+
 <footer class="footer">
-    <h3>Team Nova</h3>
-    <p>University Portfolio Showcase</p>
-    <p class="copyright">© 2026 Team Nova. All Rights Reserved.</p>
+
+<h3>
+Team Nova
+</h3>
+
+
+<p>
+University Portfolio Showcase
+</p>
+
+
+<p class="copyright">
+© 2026 Team Nova. All Rights Reserved.
+</p>
+
+
 </footer>
 
-<!-- JAVASCRIPT -->
-<script src="js/members.js"></script>
-<script src="js/app.js"></script>
+
+
+
+
+
+
+<!-- JAVASCRIPT (same folder) -->
+
+<script src="members.js"></script>
+
+<script src="app.js"></script>
+
+
 
 </body>
+
 </html>
