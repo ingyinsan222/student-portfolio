@@ -132,3 +132,78 @@ document.addEventListener("mousemove", (e) => {
         }
     });
 });
+
+/* ==========================================
+   TEAM NOVA
+   THEME CONTROLLER
+========================================== */
+
+
+const themeToggle =
+document.getElementById("themeToggle");
+
+
+
+const savedTheme =
+localStorage.getItem("theme");
+
+
+
+
+// Load saved theme
+
+if(savedTheme === "light"){
+
+    document.body.classList.add("light");
+
+    themeToggle.textContent="☀️";
+
+}
+
+
+
+
+// Toggle Theme
+
+themeToggle.addEventListener("click",()=>{
+
+
+    document.body.classList.toggle("light");
+
+
+
+    const isLight =
+    document.body.classList.contains("light");
+
+
+
+    if(isLight){
+
+
+        themeToggle.textContent="☀️";
+
+
+        localStorage.setItem(
+            "theme",
+            "light"
+        );
+
+
+    }
+
+    else{
+
+
+        themeToggle.textContent="🌙";
+
+
+        localStorage.setItem(
+            "theme",
+            "dark"
+        );
+
+
+    }
+
+
+});
