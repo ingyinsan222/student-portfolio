@@ -30,8 +30,8 @@ const members = [
     {
         id: 4,
         name: "Kyi Phyu Khin",
-        role: "",
+        role: "A",
         image: "KPK.jpg",
-        github: "https://kyiphyukhin878-debug.github.io/student-portfolio/"
+        github: "https://github.com/"
     }
 ];
