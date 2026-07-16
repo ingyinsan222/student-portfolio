@@ -26,7 +26,11 @@ A modern, responsive team portfolio website built to showcase the members, roles
 ├── style.css       # All styling, theming, animations, and responsive rules
 ├── app.js          # Core app logic: card rendering, theme toggle, scroll effects
 ├── members.js      # Team member data (name, role, image, GitHub link)
-└── README.md        # Project documentation
+├──IS.jpg           # Member profile
+├──MBK.jpg          # Member profile
+├──DLS.jpg          # Member profile
+├──KPK.jpg          # Member profile
+└── README.md       # Project documentation
 ```
 
 ---
@@ -35,10 +39,10 @@ A modern, responsive team portfolio website built to showcase the members, roles
 
 | Name | Role |
 |------|------|
-| Ingyin San | Frontend Developer |
-| Dwat Lian Sang | Backend Developer |
-| Myat Bhone Kyaw | UI / UX Designer |
-| Kyi Phyu Khin | Full Stack Developer |
+| Ingyin San | UI / UX Designer |
+| Dwat Lian Sang | Frontend Developer |
+| Myat Bhone Kyaw |  Full Stack Developer |
+| Kyi Phyu Khin | Backend Developer |
 
 
 ---
@@ -67,8 +71,7 @@ No build tools or dependencies are required — this is a static site.
    # Using Node (http-server)
    npx http-server
    ```
-3. Visit `http://localhost:8000` in your browser.
-
+   
 ---
 
 ## ✏️ Customization
