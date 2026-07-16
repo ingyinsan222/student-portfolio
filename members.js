@@ -27,7 +27,7 @@ const members = [
     {
         id: 4,
         name: "Kyi Phyu Khin",
-        role: "A",
+        role: "Backend Developer",
         image: "KPK.jpg",
         github: "https://github.com/"
     }
