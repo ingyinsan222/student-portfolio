@@ -32,6 +32,6 @@ const members = [
         name: "Kyi Phyu Khin",
         role: "",
         image: "KPK.jpg",
-        github: "https://github.com/"
+        github: "https://kyiphyukhin878-debug.github.io/student-portfolio/"
     }
 ];
