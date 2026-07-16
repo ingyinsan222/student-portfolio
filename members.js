@@ -1,9 +1,6 @@
 /* ==========================================
    TEAM NOVA
    MEMBER DATABASE
-   NOTE: Members One and Four still use the placeholder
-   "https://github.com/" — replace with their real
-   GitHub/portfolio URLs when you have them.
 ========================================== */
 const members = [
     {
