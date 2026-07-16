@@ -1,83 +1,37 @@
 /* ==========================================
    TEAM NOVA
    MEMBER DATABASE
+   NOTE: Members One and Four still use the placeholder
+   "https://github.com/" — replace with their real
+   GitHub/portfolio URLs when you have them.
 ========================================== */
-
-
 const members = [
-
     {
         id: 1,
-
-        name: "Member One",
-
+        name: "Ingyin San",
         role: "Frontend Developer",
-
-        image:
-        "assets/images/member1.jpg",
-
-        github:
-        "https://github.com/",
-
-        description:
-        "Frontend developer focused on building modern, responsive and user-friendly web interfaces."
+        image: "IS.jpg",
+        github: "https://github.com/" // TODO: replace with real profile URL
     },
-
-
-
     {
         id: 2,
-
-        name: "Member Two",
-
+        name: "Dwat Lian Sang",
         role: "Backend Developer",
-
-        image:
-        "assets/images/member2.jpg",
-
-        github:
-        "https://github.com/",
-
-        description:
-        "Backend developer responsible for creating efficient systems, APIs and database solutions."
+        image: "DLS.jpg",
+        github: "https://dawtlian-s.github.io/student-portfolio/"
     },
-
-
-
     {
         id: 3,
-
         name: "Myat Bhone Kyaw",
-
-        role: "Full Stack Developer",
-
-        image:
-        "assets/images/member3.jpg",
-
-        github:
-        "https://sirnekoooqt21.github.io/my-portfolio/",
-
-        description:
-        "A versatile software engineer who builds and maintains both the front-end (user-facing interface) and the back-end (behind-the-scenes server, database, and logic) of a website or web application."
+        role: "UI / UX Designer",
+        image: "MBK.jpg",
+        github: "https://sirnekoooqt21.github.io/my-portfolio/"
     },
-
-
-
     {
         id: 4,
-
-        name: "Member Four",
-
+        name: "Kyi Phyu Khin",
         role: "Full Stack Developer",
-
-        image:
-        "assets/images/member4.jpg",
-
-        github:
-        "https://github.com/",
-
-        description:
-        "Full stack developer working across frontend and backend technologies to build complete applications."
+        image: "KPK.jpg",
+        github: "https://github.com/" // TODO: replace with real profile URL
     }
-
 ];

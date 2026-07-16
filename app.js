@@ -14,42 +14,17 @@ members.forEach(member => {
         <img src="${member.image}" alt="${member.name}">
         <h3>${member.name}</h3>
         <p>${member.role}</p>
-        <button class="primary-btn view-btn">View Profile</button>
+        <button type="button" class="primary-btn view-btn">View Profile</button>
     `;
 
     teamContainer.appendChild(card);
 
     const button = card.querySelector(".view-btn");
-    button.addEventListener("click", () => openModal(member));
-});
-
-// PROFILE MODAL
-const modal = document.getElementById("profileModal");
-const modalClose = document.getElementById("modalClose");
-const modalImage = document.getElementById("modalImage");
-const modalName = document.getElementById("modalName");
-const modalRole = document.getElementById("modalRole");
-const modalDescription = document.getElementById("modalDescription");
-const modalGithub = document.getElementById("modalGithub");
-
-function openModal(member){
-    modalImage.src = member.image;
-    modalName.textContent = member.name;
-    modalRole.textContent = member.role;
-    modalDescription.textContent = member.description;
-    modalGithub.href = member.github;
-
-    modal.classList.add("active");
-}
-
-modalClose.addEventListener("click", () => {
-    modal.classList.remove("active");
-});
-
-modal.addEventListener("click", (e) => {
-    if(e.target === modal){
-        modal.classList.remove("active");
-    }
+    button.addEventListener("click", () => {
+        if (member.github) {
+            window.open(member.github, "_blank", "noopener,noreferrer");
+        }
+    });
 });
 
 // MOBILE MENU
@@ -85,7 +60,7 @@ const progressBar = document.getElementById("progressBar");
 window.addEventListener("scroll", () => {
     const scrollTop = document.documentElement.scrollTop;
     const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const progress = (scrollTop / height) * 100;
+    const progress = height > 0 ? (scrollTop / height) * 100 : 0;
 
     progressBar.style.width = progress + "%";
 });
@@ -94,10 +69,9 @@ window.addEventListener("scroll", () => {
 const topButton = document.getElementById("topButton");
 
 window.addEventListener("scroll", () => {
-    if(window.scrollY > 500){
+    if (window.scrollY > 500) {
         topButton.style.display = "block";
-    }
-    else{
+    } else {
         topButton.style.display = "none";
     }
 });
@@ -116,7 +90,7 @@ document.addEventListener("mousemove", (e) => {
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
 
-        if(x > 0 && x < rect.width && y > 0 && y < rect.height){
+        if (x > 0 && x < rect.width && y > 0 && y < rect.height) {
             const rotateY = ((x / rect.width) - .5) * 15;
             const rotateX = ((y / rect.height) - .5) * -15;
 
@@ -126,8 +100,7 @@ document.addEventListener("mousemove", (e) => {
                 rotateY(${rotateY}deg)
                 translateY(-10px)
             `;
-        }
-        else{
+        } else {
             card.style.transform = "";
         }
     });
@@ -138,72 +111,26 @@ document.addEventListener("mousemove", (e) => {
    THEME CONTROLLER
 ========================================== */
 
-
-const themeToggle =
-document.getElementById("themeToggle");
-
-
-
-const savedTheme =
-localStorage.getItem("theme");
-
-
-
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
 
 // Load saved theme
-
-if(savedTheme === "light"){
-
+if (savedTheme === "light") {
     document.body.classList.add("light");
-
-    themeToggle.textContent="☀️";
-
+    themeToggle.textContent = "☀️";
 }
 
-
-
-
 // Toggle Theme
-
-themeToggle.addEventListener("click",()=>{
-
-
+themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("light");
 
+    const isLight = document.body.classList.contains("light");
 
-
-    const isLight =
-    document.body.classList.contains("light");
-
-
-
-    if(isLight){
-
-
-        themeToggle.textContent="☀️";
-
-
-        localStorage.setItem(
-            "theme",
-            "light"
-        );
-
-
+    if (isLight) {
+        themeToggle.textContent = "☀️";
+        localStorage.setItem("theme", "light");
+    } else {
+        themeToggle.textContent = "🌙";
+        localStorage.setItem("theme", "dark");
     }
-
-    else{
-
-
-        themeToggle.textContent="🌙";
-
-
-        localStorage.setItem(
-            "theme",
-            "dark"
-        );
-
-
-    }
-
-
 });
