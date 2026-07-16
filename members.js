@@ -9,29 +9,29 @@ const members = [
     {
         id: 1,
         name: "Ingyin San",
-        role: "Frontend Developer",
+        role: "UI / UX Designer",
         image: "IS.jpg",
-        github: "https://github.com/" // TODO: replace with real profile URL
+        github: "https://ingyinsan222.github.io/MyPortfolio/" //
     },
     {
         id: 2,
-        name: "Dwat Lian Sang",
-        role: "Backend Developer",
+        name: "Dawt Lian Sang",
+        role: "Frontend Developer",
         image: "DLS.jpg",
         github: "https://dawtlian-s.github.io/student-portfolio/"
     },
     {
         id: 3,
         name: "Myat Bhone Kyaw",
-        role: "UI / UX Designer",
+        role: "Full Stack Developer",
         image: "MBK.jpg",
         github: "https://sirnekoooqt21.github.io/my-portfolio/"
     },
     {
         id: 4,
         name: "Kyi Phyu Khin",
-        role: "Full Stack Developer",
+        role: "",
         image: "KPK.jpg",
-        github: "https://github.com/" // TODO: replace with real profile URL
+        github: "https://github.com/"
     }
 ];
