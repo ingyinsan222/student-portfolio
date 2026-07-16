@@ -63,7 +63,7 @@ No build tools or dependencies are required — this is a static site.
 
 ### Running Locally
 1. Clone or download this repository.
-2. Open `index.html` directly in your browser, **or** serve it locally for the best experience:
+2. Open `index.html` directly in your browser.
    
 ---
 
