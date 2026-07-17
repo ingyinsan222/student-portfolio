@@ -56,15 +56,32 @@ A modern, responsive team portfolio website built to showcase the members, roles
 
 ---
 
-## 🚀 Getting Started
+# 🚀 Getting Started
 
-### Prerequisites
-No build tools or dependencies are required — this is a static site.
+## Clone the repository
 
-### Running Locally
-1. Clone or download this repository.
-2. Open `index.html` directly in your browser.
-   
+```bash
+git clone https://github.com/ingyinsan222/student-portfolio.git
+```
+
+## Navigate to the project
+
+```bash
+cd student-portfolio
+```
+
+## Run the website
+
+Simply open
+
+```
+index.html
+```
+
+in your preferred browser.
+
+No installation or build process is required.
+
 ---
 
 ## ✏️ Customization
