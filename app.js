@@ -14,7 +14,7 @@ members.forEach(member => {
         <img src="${member.image}" alt="${member.name}">
         <h3>${member.name}</h3>
         <p>${member.role}</p>
-        <button type="button" class="primary-btn view-btn">View Profile</button>
+        <button type="button" class="primary-btn view-btn">View Portfolio</button>
     `;
 
     teamContainer.appendChild(card);
